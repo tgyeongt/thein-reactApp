@@ -14,13 +14,16 @@ function App() {
     <>
       <ScrollProgress />
       <Nav />
-      <Section id="top" dataSec="about" padding="pt-24 pb-10 lg:pt-[130px] lg:pb-[70px]">
+      <Section
+        id="top"
+        dataSec="about"
+        padding="pt-24 pb-10 lg:pt-[130px] lg:pb-[70px]"
+      >
         <Hero />
       </Section>
       <Section
         id="about"
         dataSec="about"
-        padding="py-16 sm:py-20 lg:py-[110px]"
         head={{ no: "01", kicker: "ABOUT", title: "소개" }}
       >
         <About />
@@ -28,12 +31,11 @@ function App() {
       <Section
         id="record"
         dataSec="record"
-        padding="py-16 sm:py-20 lg:py-[110px]"
         bg="bg-paper-alt"
         head={{
           no: "02",
           kicker: "AWARDS & CERTIFICATIONS",
-          title: "수상 & 자격",
+          title: "수상 & 자격증",
         }}
       >
         <Record />
@@ -41,7 +43,6 @@ function App() {
       <Section
         id="activity"
         dataSec="record"
-        padding="py-16 sm:py-20 lg:py-[110px]"
         head={{
           no: "03",
           kicker: "TRAINING & ACTIVITY",
@@ -53,7 +54,6 @@ function App() {
       <Section
         id="skills"
         dataSec="skills"
-        padding="py-16 sm:py-20 lg:py-[110px]"
         bg="bg-paper-alt"
         head={{ no: "04", kicker: "SKILLS", title: "기술 스택" }}
       >
@@ -62,7 +62,6 @@ function App() {
       <Section
         id="projects"
         dataSec="projects"
-        padding="py-16 sm:py-20 lg:py-[110px]"
         head={{ no: "05", kicker: "PROJECTS", title: "프로젝트" }}
       >
         <Projects />

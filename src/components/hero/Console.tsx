@@ -31,7 +31,12 @@ export default function Console() {
   }, [c.logs]);
 
   return (
-    <div className="reveal w-full lg:flex-[0_1_420px] lg:min-w-[320px] border-[1.5px] border-ink bg-ink text-[#eaeaea]">
+    <a
+      href="https://www.stocket.site/"
+      target="_blank"
+      rel="noopener"
+      className="reveal block w-full lg:flex-[0_1_420px] lg:min-w-[320px] border-[1.5px] border-ink bg-ink text-[#eaeaea] no-underline"
+    >
       <div className="flex items-center justify-between px-[14px] py-[11px] border-b border-[#2a2a2a]">
         <div className="flex gap-1.5 items-center">
           <span className="w-[9px] h-[9px] bg-accent" />
@@ -60,6 +65,6 @@ export default function Console() {
         <span className="text-[#4d86ff]">›</span> <span>{log}</span>
         <span className="inline-block w-[7px] h-[13px] bg-[#eaeaea] ml-1 align-middle [animation:blink_1.1s_step-end_infinite]" />
       </div>
-    </div>
+    </a>
   );
 }

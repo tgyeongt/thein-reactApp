@@ -2,11 +2,20 @@ interface SectionHeadProps {
   no: string;
   kicker: string;
   title: string;
+  dataSec?: string;
 }
 
-export default function SectionHead({ no, kicker, title }: SectionHeadProps) {
+export default function SectionHead({
+  no,
+  kicker,
+  title,
+  dataSec,
+}: SectionHeadProps) {
   return (
-    <div className="reveal flex items-baseline gap-5 mb-[54px]">
+    <div
+      data-sec={dataSec}
+      className="reveal flex items-baseline gap-5 mb-[54px]"
+    >
       <span className="index-badge">{no}</span>
       <div>
         <div className="font-mono font-semibold text-xs tracking-[0.18em] text-[#8a8a8a] mb-[13px]">
